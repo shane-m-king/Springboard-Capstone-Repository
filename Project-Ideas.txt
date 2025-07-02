@@ -1,0 +1,24 @@
+Springboard Capstone Project Step 1: Initial Project Ideas
+
+This is the very first step in the Capstone Project process for Springboard. Below are some potential ideas to go through
+with my Springboard mentor to help decide what web application idea will be used to put together a proposal in Step 2.
+
+Potential Web App ideas:
+
+1. My former job and ongoing hobby is streaming Hearthstone on Twitch. Using the public APIs provided for Hearthstone by 
+Blizzard and possibly some data provided by myself, I could create a website of Hearthstone related minigames for fans of
+the game to play, or for content creators to use on their stream. I could include a leaderboard for users to see who
+performs best at them - although the nature of this would likely mean people could just look up the answers. Games could
+include trivia, filling in blanks on cards, naming cards based on art, crosswords etc.
+
+2. An app that keeps track of personalized video game stats. Could have lists of games that are completed, partially
+completed - could have a wishlist for desired games, and potentially fetch prices of that game from multiple sources to see
+what the best deal is? Could have friends where you can compare what games they have or haven't played. Looks like there is
+IGDB which seems to be the video game equivalent to the IMDB. Could also sugguest video games to people based on what the
+have enjoyed? Perhaps some sort of tagging system for others to see if they search a game? Rating system of course on which
+game they played?
+
+3. Some sort of mystery/escape the room style game that showcases interactivity on the front end. Would have to find ways
+to utilize the back end more, with accounts and logins, having the state of your game saved upon returning etc. Would
+incorporate some sort of small story with it, and have a few pages for a few rooms. Could incorporate any number of
+various external or internal APIs.
