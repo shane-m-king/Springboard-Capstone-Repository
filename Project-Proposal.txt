@@ -1,0 +1,67 @@
+Springboard Capstone Project Step 2: Project Proposal
+
+PROJECT PROPOSAL: PERSONALIZED VIDEO GAME HUB
+
+TECH STACK (MERN):
+- Frontend: React (web-based, mobile version would be a stretch goal)
+- Backend: Node.js with Express
+- Database: MongoDB
+
+EXTERNAL APIs: 
+- IGDB API - for video game data (titles, genres, ratings, etc.)
+- IsThereAnyDeal API - for price data across platforms (Steam, Epic, etc.)
+
+POTENTIAL TOOLS: 
+- Vercel or Netlify (frontend)
+- Render or Heroku (backend)
+- Axios for API calls, dotenv for environment configuration, JWT and bcrypt for login authentication
+
+
+FOCUS OF THE PROJECT:
+
+This project will take a balanced full-stack approach, with even focus on frontend and backend components.
+On the frontend, focus will be on a user experience that makes navigation through different sections—such as games,
+prices, and user profiles—clean and simple. On the backend, a scalable and appropriately-designed database will be key
+to ensure safe authentication and efficient and accurate API integration.
+
+PROJECT TYPE: 
+
+Web-based app (desktop-first)
+
+PROJECT GOAL:
+
+The goal of this project is to allow users to create and manage a personalized profile of video game-related data,
+including played games, wishlist games, etc., without being limited by the platform(s) (Steam, Epic, etc.) in which their
+games are owned. Users will also be able to search a database for other games and view relevant information, see other
+user profiles, and look for the best video game deals.
+
+USER DEMOGRAPHIC:
+
+The primary users of the website will be video game enthusiasts who enjoy tracking their video game
+data as well as those looking to buy games and quickly find the best deals available.
+
+APPROACH:
+
+The app will rely on external APIs—particularly IGDB and IsThereAnyDeal—for game and pricing information.
+These APIs will populate game data and support dynamic real-time searches.
+
+Sensitive information (passwords, emails) and API reliability (tokens, incomplete data) need special
+consideration.
+
+DATABASE SCHEMA (initial thoughts):
+- Users: id, username, email, password (hashed), profile data
+- Games: id, title, rating, prices
+- UserGames: links users to games - personal notes, personal rating, completion status, etc.
+
+KEY FUNCTIONALITY:
+- User login
+- Search for games via external APIs
+- Personal video game info tracking
+- Price comparisons
+- Viewing other user profiles
+
+POTENTIAL STRETCH GOALS:
+- Turn the website into a mobile application
+- Import game data from external sources
+- Alert user when flagged games go on sale
+- Game recommendations
