@@ -8,6 +8,10 @@ const gameSchema = new Schema(
       required: [true, "Please provide a title"],
       trim: true,
     },
+    summary: {
+      type: String,
+      trim: true,
+    },
     genres: {
       type: [String],
       required: [true, "Please provide a set of genres"],

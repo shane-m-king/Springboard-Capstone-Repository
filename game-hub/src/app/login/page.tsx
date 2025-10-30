@@ -2,9 +2,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { axios } from "axios";
 
-export default function LoginPage() {
+const LoginPage = () => {
     const [user, setUser] = useState({
         username: "",
         password: "",
@@ -13,8 +12,6 @@ export default function LoginPage() {
     const onLogin = async () => {
 
     }
-
-
 
     return (
         <div>
@@ -43,3 +40,5 @@ export default function LoginPage() {
         </div>
     )
 }
+
+export default LoginPage;

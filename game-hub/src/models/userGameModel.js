@@ -1,21 +1,22 @@
 import mongoose from "mongoose";
 const { Schema, models, model, Types } = mongoose;
+import { STATUSES } from "@/constants/statuses";
 
 const userGameSchema = new Schema(
   {
-    userId: {
+    user: {
       type: Types.ObjectId,
       ref: "User",
       required: true,
     },
-    gameId: {
+    game: {
       type: Types.ObjectId,
       ref: "Game",
       required: true,
     },
     status: {
       type: String,
-      enum: ["Owned", "Wishlisted", "Unowned", "Blacklisted"],
+      enum: STATUSES,
       required: true,
       default: "Unowned",
     },

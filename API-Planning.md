@@ -5,7 +5,6 @@
 POST: /api/auth/register - Create new user
 POST: /api/auth/login - Authenticate user and return token
 POST: /api/auth/logout - Log out user and invalidate token
-PATCH /api/auth/password - Update user password
 
 ## USERS
 
@@ -17,15 +16,15 @@ DELETE: /api/users/:id - Delete account
 ## GAMES
 
 GET: /api/games - Get all games (supports pagination, filters like ?platform=, ?genre=)
-GET: /api/games/search?query= - Search games via IGDB
 GET: /api/games/:id - Fetch game details
 
 ## USER GAMES
 
-GET: GET /api/users/:id/games - Get all games linked to user (support query params: ?status=, ?platform=)
-POST: /api/usergames - Add game to user’s library (body: { gameId, status, notes })
-PATCH: /api/users/:id/games/:libraryId - Update game status or notes
-DELETE: /api/users/:id/games/:libraryId - Remove game entry
+GET: /api/users/:id/games - Get all games linked to user (support query params: ?status=, ?platform=)
+POST: /api/users/:id/games - Add game to user's library (body: { gameId, status, notes })
+GET: /api/users/:id/games/:gameid - Get specific game linked to a user
+PATCH: /api/users/:id/games/:gameid - Update game status or notes
+DELETE: /api/users/:id/games/:gameid - Remove game entry
 
 ## REVIEWS
 

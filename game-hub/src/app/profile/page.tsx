@@ -1,6 +1,6 @@
 "use client";
 
-export default function ProfilePage() {
+const ProfilePage = () => {
     return (
         <div>
             <h1>PROFILE</h1>
@@ -9,3 +9,5 @@ export default function ProfilePage() {
         </div>
     )
 }
+
+export default ProfilePage;

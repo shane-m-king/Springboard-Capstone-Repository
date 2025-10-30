@@ -1,21 +1,33 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { axios } from "axios";
 
-export default function RegisterPage() {
+const RegisterPage = () => {
+    const router = useRouter();
+    
+    // Regular expression test for email validation
+    const emailRegex = /^\S+@\S+\.\S+$/;
+
     const [user, setUser] = useState({
         email: "",
         username: "",
         password: "",
     })
 
+    const [buttonDisabled, setButtonDisabled] = useState(true);
+
     const onRegister = async () => {
 
     }
 
-
+    useEffect(() => {
+      if (user.email && user.username && user.password) {
+        setButtonDisabled(false);
+      } else {
+        setButtonDisabled(true);
+      }
+    }, [user]);
 
     return (
         <div>
@@ -52,3 +64,5 @@ export default function RegisterPage() {
         </div>
     )
 }
+
+export default RegisterPage;
